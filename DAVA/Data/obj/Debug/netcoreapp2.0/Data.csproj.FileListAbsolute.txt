@@ -7,3 +7,12 @@ E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\Data\obj\Debug\netco
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\Data\bin\Debug\netcoreapp2.0\Data.pdb
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\Data\obj\Debug\netcoreapp2.0\Data.dll
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\Data\obj\Debug\netcoreapp2.0\Data.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\bin\Debug\netcoreapp2.0\Data.deps.json
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\bin\Debug\netcoreapp2.0\Data.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\bin\Debug\netcoreapp2.0\Data.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\obj\Debug\netcoreapp2.0\Data.csprojResolveAssemblyReference.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\obj\Debug\netcoreapp2.0\Data.csproj.CoreCompileInputs.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\obj\Debug\netcoreapp2.0\Data.AssemblyInfoInputs.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\obj\Debug\netcoreapp2.0\Data.AssemblyInfo.cs
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\obj\Debug\netcoreapp2.0\Data.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Data\obj\Debug\netcoreapp2.0\Data.pdb

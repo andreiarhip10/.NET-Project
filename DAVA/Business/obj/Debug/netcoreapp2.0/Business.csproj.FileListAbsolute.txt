@@ -9,3 +9,14 @@ E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\Business\obj\Debug\n
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfo.cs
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.dll
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\bin\Debug\netcoreapp2.0\Business.deps.json
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\bin\Debug\netcoreapp2.0\Business.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\bin\Debug\netcoreapp2.0\Business.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\bin\Debug\netcoreapp2.0\Data.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\bin\Debug\netcoreapp2.0\Data.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.csprojResolveAssemblyReference.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.csproj.CoreCompileInputs.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfoInputs.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfo.cs
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\Business\obj\Debug\netcoreapp2.0\Business.pdb

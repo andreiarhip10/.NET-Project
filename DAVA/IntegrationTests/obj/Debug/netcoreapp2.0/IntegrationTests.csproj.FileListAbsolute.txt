@@ -16,3 +16,21 @@ E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\IntegrationTests\bin
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\Data.pdb
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\IntegrationTests\obj\Debug\netcoreapp2.0\IntegrationTests.dll
 E:\FII\Anul 3\Introducere in .NET\Project\.NET-Project\DAVA\IntegrationTests\obj\Debug\netcoreapp2.0\IntegrationTests.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\IntegrationTests.deps.json
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\IntegrationTests.runtimeconfig.json
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\IntegrationTests.runtimeconfig.dev.json
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\IntegrationTests.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\IntegrationTests.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\Business.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\Data.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\Business.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\bin\Debug\netcoreapp2.0\Data.pdb
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\obj\Debug\netcoreapp2.0\IntegrationTests.csprojResolveAssemblyReference.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\obj\Debug\netcoreapp2.0\IntegrationTests.csproj.CoreCompileInputs.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\obj\Debug\netcoreapp2.0\IntegrationTests.AssemblyInfoInputs.cache
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\obj\Debug\netcoreapp2.0\IntegrationTests.AssemblyInfo.cs
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\obj\Debug\netcoreapp2.0\IntegrationTests.dll
+E:\Facultate\Anul 3\dotNET\.NET-Project\DAVA\IntegrationTests\obj\Debug\netcoreapp2.0\IntegrationTests.pdb

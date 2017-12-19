@@ -24,8 +24,7 @@ namespace IntegrationTests
 
         protected void RunOnDatabase(Action<DatabaseService> action)
         {
-            if (UseSqlServer)
-            {
+            if (UseSqlServer) {
                 RunOnSqlServer(action);
             }
             else
