@@ -17,7 +17,7 @@ namespace IntegrationTests
             {
                 //Arrange
                 var repository = new DashboardRepository(sut);
-                var dashboard = Dashboard.Create(new DateTime(2017, 12, 19), "leisure");
+                var dashboard = Dashboard.Create(new DateTime(2017, 12, 16), "leisure");
 
                 //Act
                 repository.Add(dashboard);
@@ -25,6 +25,24 @@ namespace IntegrationTests
                 //Assert
                 var dashboards = repository.GetAll();
                 Assert.AreEqual(1, dashboards.Count);
+            });
+        }
+
+        [TestMethod]
+        public void Given_DashboardRepository_When_GettingDashboardById_Then_ShouldReturnCorrectDashboard()
+        {
+            RunOnDatabase(sut =>
+            {
+                //Arrange
+                var repository = new DashboardRepository(sut);
+                var dashboard = Dashboard.Create(new DateTime(2017, 12, 16), "leisure");
+
+                //Act
+                repository.Add(dashboard);
+
+                //Assert
+                var returnedDashboard = repository.GetById(dashboard.Id);
+                Assert.AreEqual(dashboard.Id, returnedDashboard.Id);
             });
         }
     }
