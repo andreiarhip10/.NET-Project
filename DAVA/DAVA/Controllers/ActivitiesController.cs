@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DAVA.Controllers
 {
-    [Route("api/dashboards/{dashboardId}/[controller]")]
+    [Route("api/Dashboards/{dashboardId}/Activities")]
     public class ActivitiesController : Controller
     {
         private readonly IActivityRepository _repository;

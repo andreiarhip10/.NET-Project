@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DAVA.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Dashboards")]
     public class DashboardsController : Controller
     {
         private readonly IDashboardRepository _repository;
@@ -37,7 +37,7 @@ namespace DAVA.Controllers
         }
 
         [HttpPut("{id}")]
-        public void Put(Guid id, [FromBody] UpdateDashboardModel dashboard)
+        public void Put(Guid id, [FromBody]UpdateDashboardModel dashboard)
         {
             var entity = _repository.GetById(id);
             entity.Update(dashboard.Date, dashboard.Type);

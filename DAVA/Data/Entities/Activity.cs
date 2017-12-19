@@ -13,7 +13,7 @@ namespace Data.Entities
 
         [Key]
         [Required]
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } //private setters
 
         [Required(ErrorMessage = "A Name is required.")]
         [RegularExpression(@"^[a-zA-Z''-'\s]{1,50}$",
