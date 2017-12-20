@@ -3392,7 +3392,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Duda\\.nuget\\packages\\": {},
+    "C:\\Users\\Dan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3401,17 +3401,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\Data\\Data.csproj",
+      "projectUniqueName": "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\Duda\\.nuget\\packages\\",
-      "outputPath": "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\Data\\obj\\",
+      "projectPath": "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
+      "outputPath": "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Duda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

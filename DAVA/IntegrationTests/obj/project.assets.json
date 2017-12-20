@@ -6694,7 +6694,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Duda\\.nuget\\packages\\": {},
+    "C:\\Users\\Dan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -6703,17 +6703,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\IntegrationTests\\IntegrationTests.csproj",
+      "projectUniqueName": "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\IntegrationTests\\IntegrationTests.csproj",
       "projectName": "IntegrationTests",
-      "projectPath": "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\IntegrationTests\\IntegrationTests.csproj",
-      "packagesPath": "C:\\Users\\Duda\\.nuget\\packages\\",
-      "outputPath": "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\IntegrationTests\\obj\\",
+      "projectPath": "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\IntegrationTests\\IntegrationTests.csproj",
+      "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
+      "outputPath": "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Duda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6726,11 +6726,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\Data\\Data.csproj": {
-              "projectPath": "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\Data\\Data.csproj"
+            "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\Data\\Data.csproj": {
+              "projectPath": "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\Data\\Data.csproj"
             },
-            "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\Business\\Business.csproj": {
-              "projectPath": "E:\\FII\\Anul 3\\Introducere in .NET\\Project\\.NET-Project\\DAVA\\Business\\Business.csproj"
+            "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\Business\\Business.csproj": {
+              "projectPath": "E:\\Facultate\\Anul 3\\dotNET\\.NET-Project\\DAVA\\Business\\Business.csproj"
             }
           }
         }
