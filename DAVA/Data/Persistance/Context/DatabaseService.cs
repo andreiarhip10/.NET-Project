@@ -1,8 +1,7 @@
-﻿using Data.Context;
-using Data.Entities;
+﻿using Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data.Data.Persistance.Context
+namespace Data.Persistance.Context
 {
     public sealed class DatabaseService : DbContext, IDatabaseService
     {

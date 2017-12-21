@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Data.Entities.Validation;
 
 namespace Data.Entities
 {
-    public class Dashboard
+    public class Dashboard : Validations
     {
         private Dashboard()
         {
@@ -12,19 +13,17 @@ namespace Data.Entities
         }
 
         [Key]
-        [Required]
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
-        [Required(ErrorMessage = "A Date is required.")]
-        public DateTime Date { get; set; }
+        public DateTime Date { get; private set; }
 
-        [Required(ErrorMessage = "A Type is required.")]
-        public string Type { get; set; }
+        public string Type { get; private set; }
 
-        public List<Activity> Activities { get; set; }
+        public virtual List<Activity> Activities { get; set; }
 
         public static Dashboard Create(DateTime date, string type)
         {
+            if(!ValidateDashboard(date, type)) return null;
             var instance = new Dashboard {Id = Guid.NewGuid(), Activities = new List<Activity>()};
             instance.Update(date, type);
             return instance;
@@ -32,8 +31,14 @@ namespace Data.Entities
 
         public void Update(DateTime date, string type)
         {
-            this.Date = date;
-            this.Type = type;
+            //ValidateDashboard(date, type);
+            Date = date;
+            Type = type;
         }
+
+        //public Dashboard GetDashboardById(Guid id)
+        //{
+        //    return this;
+        //}
     }
 }

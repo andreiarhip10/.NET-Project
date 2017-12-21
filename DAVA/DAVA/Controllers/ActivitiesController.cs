@@ -34,6 +34,7 @@ namespace DAVA.Controllers
         {
             var entity = Activity.Create(activity.Name, activity.Description, activity.Type, activity.DashboardId,
                 activity.StartingTime, activity.EndingTime);
+            //Activity.AddActivity(entity);
             _repository.Add(entity);
         }
 

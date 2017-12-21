@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Business.Repositories;
 using Data.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Business.Repositories;
-using Data.Entities;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 
 
 namespace IntegrationTests
@@ -25,7 +16,7 @@ namespace IntegrationTests
             {
                 //Arrange
                 var repository = new ActivityRepository(sut);
-                var activity = Activity.Create(".NET", "Study about .NET", "study", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
+                var activity = Activity.Create(".NET", "Study about .NET", "study/work", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
 
                 //Act
                 repository.Add(activity);
@@ -44,9 +35,9 @@ namespace IntegrationTests
                 //Arrange
 
                 var repository = new ActivityRepository(sut);
-                var activity = Activity.Create("Swim", "Go to Vivertine", "study", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
-                var secondActivity = Activity.Create("Sing", "Study Eminem music", "study", new Guid(), new DateTime(2017, 10, 10), new DateTime(2017, 11, 11));
-                var thirdActivity =  Activity.Create("Read Books", "Study .NET books", "study", new Guid(), new DateTime(2017, 2, 2), new DateTime(2017, 3, 3));
+                var activity = Activity.Create("Swim", "Go to Vivertine", "leisure", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
+                var secondActivity = Activity.Create("Sing", "Study Eminem music", "leisure", new Guid(), new DateTime(2017, 10, 10), new DateTime(2017, 11, 11));
+                var thirdActivity =  Activity.Create("Read Books", "Study .NET books", "study/work", new Guid(), new DateTime(2017, 2, 2), new DateTime(2017, 3, 3));
 
                 //Act
                 repository.Add(activity);
@@ -68,8 +59,7 @@ namespace IntegrationTests
             {
                 //Arrange
                 var repository = new ActivityRepository(sut);
-                Activity.Create("Swim", "Go to Vivertine", "study", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
-                var activity = Activity.Create("Swim", "Go to Vivertine", "study", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
+                var activity = Activity.Create("Swim", "Go to Vivertine", "leisure", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
                 //Act
                 repository.Add(activity);
 
@@ -86,14 +76,14 @@ namespace IntegrationTests
             {
                 //Arrange
                 var repository = new ActivityRepository(sut);
-                var activity = Activity.Create("Swim", "Go to Vivertine", "study", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
+                var activity = Activity.Create("Swim", "Go to Vivertine", "leisure", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
                 //Act
                 repository.Add(activity);
                 repository.Delete(activity.Id);
 
                 //Assert
                 var activitys = repository.GetAll();
-                Assert.AreEqual(0, activitys.Count); // adaug 3 si count sa fie 3. ( la GetAll )
+                Assert.AreEqual(0, activitys.Count); 
             });
         }
 
@@ -104,9 +94,9 @@ namespace IntegrationTests
             {
                 //Arrange
                 var repository = new ActivityRepository(sut);
-                var activity =  Activity.Create("Swim", "Go to Vivertine", "study", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
-                var secondActivity = Activity.Create("Poker", "Go to Las Vegas", "win", new Guid(), new DateTime(2017, 1, 11), new DateTime(2017, 2, 11));
-                var thirdActivity = Activity.Create("Ping Pong", "Go to Play Again", "study", new Guid(), new DateTime(2017, 2, 11), new DateTime(2017, 3, 11));
+                var activity =  Activity.Create("Swim", "Go to Vivertine", "leisure", new Guid(), new DateTime(2017, 11, 11), new DateTime(2017, 12, 11));
+                var secondActivity = Activity.Create("Poker", "Go to Las Vegas", "leisure", new Guid(), new DateTime(2017, 1, 11), new DateTime(2017, 2, 11));
+                var thirdActivity = Activity.Create("Ping Pong", "Go to Play Again", "leisure", new Guid(), new DateTime(2017, 2, 11), new DateTime(2017, 3, 11));
 
                 //Act
                 repository.Add(activity);
@@ -118,7 +108,7 @@ namespace IntegrationTests
 
                 //Assert
                 var activitys = repository.GetAll();
-                Assert.AreEqual(0, activitys.Count); // adaug 3 si count sa fie 3. ( la GetAll )
+                Assert.AreEqual(0, activitys.Count); 
             });
         }
 

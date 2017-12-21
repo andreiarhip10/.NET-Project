@@ -1,7 +1,7 @@
 ﻿using Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data.Context
+namespace Data.Persistance.Context
 {
     public interface IDatabaseService
     {

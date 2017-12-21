@@ -1,10 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Data.Entities.Validation;
 
 namespace Data.Entities
 {
-    public class Activity
+    public class Activity : Validations
     {
         private Activity()
         {
@@ -12,52 +13,51 @@ namespace Data.Entities
         }
 
         [Key]
-        [Required]
-        public Guid Id { get; set; } //private setters
+        public Guid Id { get; private set; } 
 
-        [Required(ErrorMessage = "A Name is required.")]
-        [RegularExpression(@"^[a-zA-Z''-'\s]{1,50}$",
-            ErrorMessage = "Only lowercase and uppercase characters are allowed.")]
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
-        [Required(ErrorMessage = "A Description is required.")]
-        [MaxLength(200, ErrorMessage = "A maximum of 200 characters is allowed.")]
-        public string Description { get; set; }
+        public string Description { get; private set; }
 
-        [Required]
-        public string Type { get; set; }
+        public string Type { get; private set; }
 
-        [Required]
-        public Guid DashboardId { get; set; }
+        public Guid DashboardId { get; private set; }
 
-        [Required(ErrorMessage = "A Starting Time is required.")]
-        public DateTime StartingTime { get; set; }
+        public DateTime StartingTime { get; private set; }
 
-        [Required(ErrorMessage = "An Ending Time is required. ")]
-        public DateTime EndingTime { get; set; }
+        public DateTime EndingTime { get; private set; }
 
-        [Required]
-        public bool IsFinished { get; set; }
+        public bool IsFinished { get; private set; }
 
         [ForeignKey("DashboardId")]
-        public Dashboard Dashboard { get; set; }
+        public virtual Dashboard Dashboard { get; set; }
 
         public static Activity Create(string name, string description, string type, Guid dashboardId, DateTime startingTime, DateTime endingTime)
         {
+            if (!ValidateActivity(name, description, type, startingTime, endingTime)) return null;
             var instance = new Activity { Id = Guid.NewGuid() };
             instance.Update(name, description, type, dashboardId, startingTime, endingTime, false);
+            //Dashboard.Activities.Add(instance);
+            // add to Activities for each dashboard
             return instance;
         }
 
         public void Update(string name, string description, string type, Guid dashboardId, DateTime startingTime, DateTime endingTime, bool isFinished)
         {
-            this.Name = name;
-            this.Description = description;
-            this.DashboardId = dashboardId;
-            this.Type = type;
-            this.StartingTime = startingTime;
-            this.EndingTime = endingTime;
-            this.IsFinished = isFinished;
+            //Validations.ValidateActivity(name, description, type, startingTime, endingTime);
+            Name = name;
+            Description = description;
+            DashboardId = dashboardId;
+            Type = type;
+            StartingTime = startingTime;
+            EndingTime = endingTime;
+            IsFinished = isFinished;
         }
+
+        //public static void AddActivity(Activity activity)
+        //{
+        //    Dashboard = Dashboard.GetDashboardById(DashboardId);
+        //    Dashboard.Activities.Add(activity);
+        //}
     }
 }

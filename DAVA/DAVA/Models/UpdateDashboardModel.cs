@@ -1,11 +1,12 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace DAVA.Models
 {
-    public class UpdateDashboardModel
+    public class UpdateDashboardModel : CreateDashboardModel
     {
+        [Key]
+        [Required]
         public Guid Id { get; set; }
-        public DateTime Date { get; set; }
-        public string Type { get; set; }
     }
 }

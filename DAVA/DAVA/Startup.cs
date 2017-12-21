@@ -1,6 +1,5 @@
 using Business.Repositories;
-using Data.Context;
-using Data.Data.Persistance.Context;
+using Data.Persistance.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;

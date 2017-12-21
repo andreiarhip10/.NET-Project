@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Business.Repositories;
 using Data.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -36,8 +34,8 @@ namespace IntegrationTests
                 //Arrange
                 var repository = new DashboardRepository(sut);
                 var dashboard = Dashboard.Create(new DateTime(2017, 12, 16), "leisure");
-                var secondDashboard = Dashboard.Create(new DateTime(2017, 11, 11), "sport");
-                var thirdDashboard = Dashboard.Create(new DateTime(2017, 5, 5), "faculty");
+                var secondDashboard = Dashboard.Create(new DateTime(2017, 11, 11), "housework");
+                var thirdDashboard = Dashboard.Create(new DateTime(2017, 5, 5), "study/work");
                 //Act
                 repository.Add(dashboard);
                 repository.Add(secondDashboard);
@@ -84,7 +82,7 @@ namespace IntegrationTests
 
                 //Assert
                 var dashboards = repository.GetAll();
-                Assert.AreEqual(0, dashboards.Count); // adaug 3 si count sa fie 3. ( la GetAll )
+                Assert.AreEqual(0, dashboards.Count);
             });
         }
 
@@ -96,8 +94,8 @@ namespace IntegrationTests
                 //Arrange
                 var repository = new DashboardRepository(sut);
                 var dashboard = Dashboard.Create(new DateTime(2017, 12, 16), "leisure");
-                var secondDashboard = Dashboard.Create(new DateTime(2017, 11, 11), "sport");
-                var thirdDashboard = Dashboard.Create(new DateTime(2017, 5, 5), "faculty");
+                var secondDashboard = Dashboard.Create(new DateTime(2017, 11, 11), "housework");
+                var thirdDashboard = Dashboard.Create(new DateTime(2017, 5, 5), "housework");
 
                 //Act
                 repository.Add(dashboard);
@@ -109,7 +107,7 @@ namespace IntegrationTests
 
                 //Assert
                 var dashboards = repository.GetAll();
-                Assert.AreEqual(0, dashboards.Count); // adaug 3 si count sa fie 3. ( la GetAll )
+                Assert.AreEqual(0, dashboards.Count);
             });
         }
 

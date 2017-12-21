@@ -1,16 +1,15 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace DAVA.Models
 {
-    public class UpdateActivityModel
+    public class UpdateActivityModel : CreateActivityModel
     {
+        [Key]
+        [Required]
         public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Type { get; set; }
-        public Guid DashboardId { get; set; }
-        public DateTime StartingTime { get; set; }
-        public DateTime EndingTime { get; set; }
+
+        [Required]
         public bool IsFinished { get; set; }
     }
 }

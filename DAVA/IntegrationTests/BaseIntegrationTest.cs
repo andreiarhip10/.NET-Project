@@ -1,5 +1,5 @@
 ﻿using System;
-using Data.Data.Persistance.Context;
+using Data.Persistance.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
