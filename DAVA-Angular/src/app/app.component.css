@@ -1,21 +1,20 @@
-.info{
-  background-color: #A1DBF0;
-  padding: 10px 24px;
-  margine: 8px;
-  color:black;
-}
-
 .acc {
-  background-color: #BBBBBB;
-  padding: 10px 24px;
-  margin: 8px;
-  color:black;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 24px;
+  background-color: #f7f7f9;
+}
+.acc:first-child{
+  border-top: 1px solid #ddd;
+}
+.acc:hover{
+  background-color: #8CCE40;
+}
+.selected{
+  background-color:#8CCE40;
 }
 
- .acc>*{
-  margin: 4px;
-}
-
-.selected {
-  background-color: #45EE50
+form{
+  margin: 24px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
