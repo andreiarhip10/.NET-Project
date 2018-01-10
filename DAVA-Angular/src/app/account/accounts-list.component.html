@@ -1,0 +1,19 @@
+<div class="row">
+  <div [hidden]="isaccountsempty()" class="alert alert-info"><strong>You don't have any accounts yet?</strong> Please add it...</div>
+</div>
+<div class="row">
+<div class="acc col-md-12" *ngFor="let acc of _accounts, let i = index"
+  [ngClass]="{
+    selected:_selected[i],
+    otherCSSClass: otherProperty
+  }">
+  <h3>{{acc.username}}</h3>
+  <p>Email:<strong class="lead">{{acc.email}}</strong></p>
+  <div class="row">
+    <div class="col-md-3">
+      <button class="btn btn-danger" (click)="removeAcc(i)">Delete</button>
+      <button class="btn btn-primary" (click)="select(i)">{{_selected[i]?'Deselect':'Select'}}</button>
+    </div>
+  </div>
+</div>
+</div>

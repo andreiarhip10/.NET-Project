@@ -2,40 +2,22 @@
   <h1>DAVA</h1>
     <h2>Your accounts</h2>
     <p>Number of accounts: {{_accounts.length}}</p>
-    <div class="row">
-      <div [hidden]="isaccountsempty()" class="alert alert-info"><strong>You don't have any accounts yet?</strong> Please add it...</div>
-    </div>
-  <div class="row">
-    <div class="acc col-md-12" *ngFor="let acc of _accounts, let i = index"
-      [ngClass]="{
-        selected:_selected[i],
-        otherCSSClass: otherProperty
-      }">
-      <h3>{{acc.username}}</h3>
-      <p>Email:<strong class="lead">{{acc.email}}</strong></p>
-      <div class="row">
-        <div class="col-md-3">
-          <button class="btn btn-danger" (click)="removeAcc(i)">Delete</button>
-          <button class="btn btn-primary" (click)="select(i)">{{_selected[i]?'Deselect':'Select'}}</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <form class="col-md-6">
-      <h3>Add Account</h3>
-      <div class="form-group">
-      <label for="username">Username:</label>
-      <input class="form-control" id="username" type="text" name="username" #username>
-      </div>
+       <accounts-list></accounts-list>
+       <div class="row">
+         <form class="col-md-6">
+           <h3>Add Account</h3>
+           <div class="form-group">
+             <label for="username">Username:</label>
+             <input class="form-control" id="username" type="text" name="username" #username>
+           </div>
 
-      <div class="form-group">
-      <label for="email">Email:</label>
-      <input class="form-control" id="email" type="text" name="email" #email>
-      </div>
-      <div class="form-group">
-      <button class="btn btn-success" type="button" (click)="createAcc(username.value,email.value); false">Create</button>
-      </div>
-    </form>
-  </div>
-</div>
+           <div class="form-group">
+             <label for="email">Email:</label>
+             <input class="form-control" id="email" type="text" name="email" #email>
+           </div>
+           <div class="form-group">
+             <button class="btn btn-success" type="button" (click)="createAcc(username.value,email.value); false">Create</button>
+           </div>
+         </form>
+       </div>
+     </div>
