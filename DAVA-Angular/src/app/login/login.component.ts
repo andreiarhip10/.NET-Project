@@ -1,8 +1,8 @@
-import {Component} from '@angular/core' ;
-import {Router} from '@angular/router' ;
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-    selector: 'login' ,
+    selector: 'login',
     templateUrl: './login.component.html',
     styleUrls: ["./login.component.css"]
 })
@@ -10,9 +10,9 @@ import {Router} from '@angular/router' ;
 export class LoginComponent {
     private username: string = "";
     private password: string = "";
-    
+
     constructor(private router: Router) {
-        if ( localStorage.getItem("isAuth")) {
+        if (localStorage.getItem("isAuth")) {
             router.navigateByUrl('/');
         }
     }
@@ -23,8 +23,8 @@ export class LoginComponent {
         //         localStorage.setItem('isAuth', 'true');
         //     }
         // });
-        if ( this.username != 'admin' && this.password != 'admin') {
-            return ;
+        if (this.username != 'admin' && this.password != 'admin') {
+            return;
         }
         else {
             localStorage.setItem("isAuth", "true");
