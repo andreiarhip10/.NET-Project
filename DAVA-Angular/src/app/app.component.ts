@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Account } from './account/account.model';
-import { AccountsList } from './account/accounts-list.component';
+
 
 @Component({
   selector: 'app-root',

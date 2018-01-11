@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>DAVA</h1>
+      <h2>Your accounts</h2>
+      <p>Number of accounts: {{_accounts.length}}</p>
+         <accounts-list></accounts-list>
+         <div class="row">
+           <form class="col-md-6">
+             <h3>Add Account</h3>
+             <div class="form-group">
+               <label for="username">Username:</label>
+               <input class="form-control" id="username" type="text" name="username" #username>
+             </div>
+  
+             <div class="form-group">
+               <label for="email">Email:</label>
+               <input class="form-control" id="email" type="text" name="email" #email>
+             </div>
+             <div class="form-group">
+               <button class="btn btn-success" type="button" (click)="createAcc(username.value,email.value); false">Create</button>
+             </div>
+           </form>
+         </div>
+       </div>
