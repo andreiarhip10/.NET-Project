@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpClient, HttpHeaders} from '@angular/common/http' ;
+import { CalendarComponent } from '../calendar/calendar.component';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
     selector: 'homepage',
@@ -15,11 +16,13 @@ export class HomePageComponent {
         }
     }
     private getUsers() {
-        this.Http.get('http://localhost:5000/api/getUsers').subscribe(function(resp){
+        this.Http.get('http://localhost:5000/api/getUsers').subscribe(function (resp) {
             console.log(resp);
         })
     }
 }
+
+
 
 
 

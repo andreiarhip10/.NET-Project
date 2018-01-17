@@ -1,18 +1,16 @@
-import {Component} from '@angular/core' ;
-import {HomePageComponent} from '../homepage/homepage.component';
+import { Component } from '@angular/core';
+import { HomePageComponent } from '../homepage/homepage.component';
 
 
 
-@Component(
-{
+@Component({
     selector: 'dashboard',
     templateUrl: './dashboard.component.html',
-    styleUrls :[]
+    styleUrls: []
 }
 )
 
-export class DashboardComponent
-{
-    private message: string = "Buna" ;
-   
+export class DashboardComponent {
+    private message: string = "Buna";
+
 }

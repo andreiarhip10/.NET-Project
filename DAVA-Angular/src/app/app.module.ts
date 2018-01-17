@@ -9,6 +9,7 @@ import { HomePageComponent} from './homepage/homepage.component' ;
 import { LoginComponent} from './login/login.component' ;
 import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
+import { CalendarComponent} from './calendar/calendar.component' ;
 import { HttpClientModule} from '@angular/common/http' ;
 
 
@@ -32,7 +33,8 @@ const appRoutes : Routes = [
     HomePageComponent,
     LoginComponent,
     SignupComponent,
-    NavbarComponent
+    NavbarComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
