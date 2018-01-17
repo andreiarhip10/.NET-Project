@@ -1,0 +1,13 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <a class="navbar-brand" routerLink="/">DAVA</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+                <li  *ngFor="let item of menuItems">
+                    <a routerLink='{{item.href}}' *ngIf="item.shown" [ngClass]="item.className" (click)="item.label == 'Logout' && logout()"> {{item.label}}</a>
+                </li>
+                <li></li>
+         </ul>   
+    </div>
+</nav>
