@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-
+import { NavbarComponent } from './common/navbar/navbar.component';
+import { Router } from '@angular/router';
+import menuItems from './common/menuItems';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private _nextId=1
-  private createAcc(usernameEl:string, emailEl:string)
-  {
-    // this._accounts.push(new Account(this._nextId,usernameEl,emailEl))
-    // this._selected.push(false) //default not selected
-    // this._nextId++
-    usernameEl=""
-    emailEl=""
+  private menuItems = menuItems();
+
+  constructor(private router: Router) {
+    router.events.subscribe(event => {
+      this.menuItems = menuItems();
+    });
   }
 }

@@ -7,7 +7,6 @@
                 <li  *ngFor="let item of menuItems">
                     <a routerLink='{{item.href}}' *ngIf="item.shown" [ngClass]="item.className" (click)="item.label == 'Logout' && logout()"> {{item.label}}</a>
                 </li>
-                <li></li>
          </ul>   
     </div>
 </nav>

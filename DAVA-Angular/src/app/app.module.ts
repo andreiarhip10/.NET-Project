@@ -8,7 +8,8 @@ import { DashboardComponent} from './dashboard/dashboard.component';
 import { HomePageComponent} from './homepage/homepage.component' ;
 import { LoginComponent} from './login/login.component' ;
 import { SignupComponent } from './signup/signup.component';
-
+import { NavbarComponent } from './common/navbar/navbar.component';
+import { HttpClientModule} from '@angular/common/http' ;
 
 
 const appRoutes : Routes = [
@@ -30,11 +31,13 @@ const appRoutes : Routes = [
     DashboardComponent,
     HomePageComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot (
       appRoutes,{enableTracing:false}
     )
