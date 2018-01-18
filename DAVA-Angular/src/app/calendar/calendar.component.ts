@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { noEventsContainerComponent} from '../noEventsContainer/noEventsContainer.component' ;
 import { EventsContainerComponent} from '../EventsContainer/EventsContainer.component' ;
 
+=======
+
+import { CalendarCellComponent } from './calendarCell/calendarCell.component';
+>>>>>>> ebb2be4e5364d457e620f12b02cf3a4b150d0ab7
 
 @Component({
     selector: 'calendar',
@@ -14,11 +19,13 @@ export class CalendarComponent {
     private monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     private selectedYear = new Date().getFullYear();
     private selectedMonth = this.monthNames[new Date().getMonth()];
-    private selectedMonthNumber = new Date().getMonth() + 4;
+    private selectedMonthNumber = new Date().getMonth() + 1;
     private days = this.getDaysNamesAndValue(this.selectedYear, this.selectedMonthNumber);
+    private dayNames = this.getTableRows(this.days);
+    private today: number = this.getCurrentDay();
 
     constructor() {
-        this.getTableRows(this.days);
+
     }
 
     private getDaysNamesAndValue(selectedYear, selectedMonth) {
@@ -70,8 +77,14 @@ export class CalendarComponent {
             });
         }
 
-        console.log(daysArray);
-        console.log(arrayToReturn);
+        return arrayToReturn;
     }
 
+    private onCellClick(cellItem) {
+        this.today = cellItem.dayNumber;
+    }
+
+    private getCurrentDay() {
+        return new Date().getDate();
+    }
 }
