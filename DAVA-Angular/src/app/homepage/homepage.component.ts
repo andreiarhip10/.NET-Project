@@ -19,7 +19,7 @@ export class HomePageComponent {
     private getUsers() {
         this.Http.get('http://localhost:5000/api/getUsers').subscribe(function (resp) {
             console.log(resp);
-        })
+        });
     }
 }
 

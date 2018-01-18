@@ -4,13 +4,11 @@
         <tbody>
             <tr *ngFor="let tableRow of dayNames">
                 <td *ngFor="let tableData of tableRow.weekItems">
-                    <calendarcell [dateObject]='tableData' (click)="onCellClick(tableData)" [today]='today'></calendarcell>
+                    <calendarcell [dateObject]='tableData' (click)="onCellClick(tableData, 'admin')" [today]='today'></calendarcell>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <noEventsContainer></noEventsContainer>
-
-    <EventsContainer></EventsContainer>
+    <EventsContainer [activities]='activities' [showTitle]='showBool'></EventsContainer>
 </div>

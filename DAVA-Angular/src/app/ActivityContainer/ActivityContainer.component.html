@@ -1,7 +1,13 @@
-<div>
-     <p> {{data.type}} activities : </p>
-     <p *ngFor="let event of data.events">
-        {{event.eventName}}
-     </p>
+<div class="activity__card">
+    <div class="activity__card__upper">
+        <h2 class="activity__card__upper__text">{{data.type}}</h2>
+    </div>
+    <div class="activity__card__lower">
+        <ul>
+            <li class="activity__card__lower__item" *ngFor="let event of data.value; index as i">
+                <a>{{i + 1}}. {{event.name}}</a>
+            </li>
+        </ul>
+    </div>
 </div>
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { noEventsContainerComponent} from '../noEventsContainer/noEventsContainer.component' ;
 import { EventsContainerComponent} from '../EventsContainer/EventsContainer.component' ;
@@ -19,24 +20,14 @@ export class CalendarComponent {
     private days = this.getDaysNamesAndValue(this.selectedYear, this.selectedMonthNumber);
     private dayNames = this.getTableRows(this.days);
     private today: number = this.getCurrentDay();
+    private activities = [];
+    private showBool: boolean = false;
 
-    constructor() {
+    constructor(private http: HttpClient) {
         
     }
 
-    // private data = [{
-    //     type: 'work',
-    //     events: [{
-    //         eventName: 'nume',
-    //         capacity: 100
-    //     }]
-    // }, {
-    //     type: 'leisure',
-    //     events: [{}]
-    // }]
-
     private getDaysNamesAndValue(selectedYear, selectedMonth) {
-        console.log(selectedYear, selectedMonth);
         let daysArray = [], l;
         const numDaysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
         const daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -87,8 +78,17 @@ export class CalendarComponent {
         return arrayToReturn;
     }
 
-    private onCellClick(cellItem) {
+    private setActivities(activities) {
+        this.activities = activities;
+    }
+
+    private onCellClick(cellItem, username: string) {
+        this.showBool = true;
         this.today = cellItem.dayNumber;
+        this.http.get(`http://localhost:5000/api/getActivities?username=${username}`)
+            .subscribe((response) => {
+                this.setActivities(response);
+            });
     }
 
     private getCurrentDay() {
