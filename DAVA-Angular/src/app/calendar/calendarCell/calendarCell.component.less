@@ -1,0 +1,42 @@
+.card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 5px;
+
+    &__upperbody {
+        height: 110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eee;
+
+        &__text {
+            font-size: 40px;
+        }
+
+        &--active {
+            background-color: #00ccff;
+            color: white;
+        }
+    }
+
+    &__lowerbody {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 1px 1px #eee;
+
+        &--active {
+            // background-color: #eee;
+            font-weight: 900;
+        }
+    }
+}

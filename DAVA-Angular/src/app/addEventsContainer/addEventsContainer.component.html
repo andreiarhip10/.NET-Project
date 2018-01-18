@@ -1,0 +1,26 @@
+<div class="container">
+    <h2 class="text-center">Add activity for today</h2>
+    <form>
+        <div class="form-group">
+            <label for="activityType">Actvity type:</label>
+            <select class="selectpicker">
+              <option>Work</option>
+              <option>Housework</option>
+              <option>Leisure</option>  
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="startDate">StartDate:</label>
+            <input type="date" class="form-control" id="startDate" name="startDate">
+        </div>
+        <div class="form-group">
+            <label for="endDate">EndDate:</label>
+            <input type="date" class="form-control" id="endDate" name="endDate">
+        </div>
+        <div class="form-group">
+            <label for="description"> Describe your activity:</label>
+            <textarea class="form-control" rows="5" id="description"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Add</button>
+    </form>
+</div>
