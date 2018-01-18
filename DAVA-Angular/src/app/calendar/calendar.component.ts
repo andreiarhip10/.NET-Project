@@ -16,6 +16,7 @@ export class CalendarComponent {
     private selectedMonthNumber = new Date().getMonth() + 1;
     private days = this.getDaysNamesAndValue(this.selectedYear, this.selectedMonthNumber);
     private dayNames = this.getTableRows(this.days);
+    private today: number = this.getCurrentDay();
 
     constructor() {
 
@@ -71,5 +72,13 @@ export class CalendarComponent {
         }
 
         return arrayToReturn;
+    }
+
+    private onCellClick(cellItem) {
+        this.today = cellItem.dayNumber;
+    }
+
+    private getCurrentDay() {
+        return new Date().getDate();
     }
 }

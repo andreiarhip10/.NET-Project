@@ -1,10 +1,10 @@
 <div class="card">
-    <div class="card__upperbody">
+    <div class="card__upperbody" [ngClass]="{'card__upperbody--active': dateObject.dayNumber == today}">
         <span class="card__upperbody__text">
             {{dateObject.dayNumber}}
         </span>
     </div>
-    <div class="card__lowerbody">
+    <div class="card__lowerbody" [ngClass]="{'card__lowerbody--active': dateObject.dayNumber == today}">
         {{dateObject.dayName}}
     </div>
 </div>
