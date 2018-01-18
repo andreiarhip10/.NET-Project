@@ -5,6 +5,10 @@ var port = 5000;
 var router = express.Router();
 const api = '/api';
 var users = require('./users/getUsers');
+var user = require('./users/getUser');
+var activities = require('./activities/getActivities');
+var activity = require('./activities/getActivity');
+var createActivity = require('./activities/createActivity');
 
 app.use(function (req, res, next) {
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -18,6 +22,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(api, router);
 app.use(api, users);
+app.use(api, user);
+app.use(api, activities);
+app.use(api, activity);
+app.use(api, createActivity);
 
 router.get('/', function (req, res) {
     res.json({ message: 'Hooray! Welcome to our api!' });
