@@ -19,8 +19,19 @@ export class CalendarComponent {
     private today: number = this.getCurrentDay();
 
     constructor() {
-
+        
     }
+
+    // private data = [{
+    //     type: 'work',
+    //     events: [{
+    //         eventName: 'nume',
+    //         capacity: 100
+    //     }]
+    // }, {
+    //     type: 'leisure',
+    //     events: [{}]
+    // }]
 
     private getDaysNamesAndValue(selectedYear, selectedMonth) {
         console.log(selectedYear, selectedMonth);

@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
     styleUrls: ['./calendarCell.component.less']
 })
 
+
 export class CalendarCellComponent implements OnInit {
     @Input() private dateObject;
     @Input() private today;
@@ -17,8 +18,4 @@ export class CalendarCellComponent implements OnInit {
     ngOnInit() {
         console.log(this.dateObject);
     }
-
-    private onCardClick() {
-
-    }
-}
+}   
