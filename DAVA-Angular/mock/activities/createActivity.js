@@ -24,6 +24,20 @@ router.post('/createActivity', function(req, resp) {
         })
     }
 
+    if(req.query.startingTime <= Date.now()) {
+        resp.status(400);
+        resp.json({
+            message: "Starting time can't be earlier than now."
+        })
+    }
+
+    if(req.query.endingTime <= Date.now()) {
+        resp.status(400);
+        resp.json({
+            message: "Ending time can't be earlier than now."
+        })
+    }
+
     resp.status(200);
     resp.json([
         {
