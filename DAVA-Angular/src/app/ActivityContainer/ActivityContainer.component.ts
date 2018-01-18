@@ -10,13 +10,13 @@ import { Router } from '@angular/router';
 })
 
 export class ActivityContainerComponent implements OnInit{
-    @Input() private type;
+    @Input() private data;
     @Input() private events;
     
     constructor() {
         
     }
     ngOnInit() {
-        console.log(this.type) ;
+        console.log(this.data) ;
     }
 }

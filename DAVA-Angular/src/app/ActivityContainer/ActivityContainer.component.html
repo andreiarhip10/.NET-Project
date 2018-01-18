@@ -1,8 +1,7 @@
 <div>
-    <h1>{{type}}</h1>
-     <h2 class="text-center"> {{activity}} activities for today
-
-     </h2>
-     <p *ngFor="let event of menuItems">  
+     <p> {{data.type}} activities : </p>
+     <p *ngFor="let event of data.events">
+        {{event.eventName}}
+     </p>
 </div>
 

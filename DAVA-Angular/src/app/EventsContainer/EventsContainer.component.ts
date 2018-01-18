@@ -10,24 +10,23 @@ import { ActivityContainerComponent } from '../ActivityContainer/ActivityContain
 
 
 export class EventsContainerComponent {
-    private types = ['Work', 'Leisure', 'Housework'];
-    private events = [];
+
     private data = [ {
         type: 'Work',
         events : [{
-            eventName : 'eveniment',
+            eventName : 'Do .NET homework',
             capacity: 15
         }]
     }, {
         type: 'Leisure',
         events : [{
-            eventName : 'eveniment',
+            eventName : 'Play guitar',
             capacity: 15
         }]
     }, {
         type: 'Housework',
         events : [{
-            eventName : 'eveniment',
+            eventName : 'Buy a new pc',
             capacity: 15
         }]
     },
