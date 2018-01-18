@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-
+import { CalendarCellComponent } from './calendarCell/calendarCell.component';
 
 @Component({
     selector: 'calendar',
@@ -13,11 +13,12 @@ export class CalendarComponent {
     private monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     private selectedYear = new Date().getFullYear();
     private selectedMonth = this.monthNames[new Date().getMonth()];
-    private selectedMonthNumber = new Date().getMonth() + 4;
+    private selectedMonthNumber = new Date().getMonth() + 1;
     private days = this.getDaysNamesAndValue(this.selectedYear, this.selectedMonthNumber);
+    private dayNames = this.getTableRows(this.days);
 
     constructor() {
-        this.getTableRows(this.days);
+
     }
 
     private getDaysNamesAndValue(selectedYear, selectedMonth) {
@@ -69,8 +70,6 @@ export class CalendarComponent {
             });
         }
 
-        console.log(daysArray);
-        console.log(arrayToReturn);
+        return arrayToReturn;
     }
-
 }

@@ -2,15 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms' ;
 import { RouterModule, Routes} from '@angular/router' ;
+import { HttpClientModule} from '@angular/common/http';
+
 import { AppComponent } from './app.component';
-import { AccountsList} from './account/accounts-list.component';
 import { DashboardComponent} from './dashboard/dashboard.component';
 import { HomePageComponent} from './homepage/homepage.component' ;
 import { LoginComponent} from './login/login.component' ;
 import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
-import { CalendarComponent} from './calendar/calendar.component' ;
-import { HttpClientModule} from '@angular/common/http' ;
+import { CalendarComponent} from './calendar/calendar.component';
+import { CalendarCellComponent } from './calendar/calendarCell/calendarCell.component';
 
 
 const appRoutes : Routes = [
@@ -18,23 +19,20 @@ const appRoutes : Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
   { path: '', component: HomePageComponent},
-  {
-    path: '**', redirectTo :'/'
-  }
-
+  { path: '**', redirectTo :'/' }
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AccountsList,
     DashboardComponent,
     HomePageComponent,
     LoginComponent,
     SignupComponent,
     NavbarComponent,
-    CalendarComponent
+    CalendarComponent,
+    CalendarCellComponent
   ],
   imports: [
     BrowserModule,

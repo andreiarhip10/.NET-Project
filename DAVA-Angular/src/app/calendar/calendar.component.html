@@ -1,6 +1,9 @@
-<table class="table">
+<table>
     <tbody>
-        <tr>
+        <tr *ngFor="let tableRow of dayNames">
+            <td *ngFor="let tableData of tableRow.weekItems">
+                <calendarcell [dateObject]='tableData'></calendarcell>
+            </td>
         </tr>
     </tbody>
 </table>
