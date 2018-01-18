@@ -6,6 +6,7 @@
         <ul>
             <li class="activity__card__lower__item" *ngFor="let event of data.value; index as i">
                 <a>{{i + 1}}. {{event.name}}</a>
+                <span class="btn  glyphicon glyphicon-edit" style="height:30px; vertical-align:center;" (click)="edit()"></span>
             </li>
         </ul>
     </div>

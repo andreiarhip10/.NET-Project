@@ -14,6 +14,7 @@ import { CalendarComponent} from './calendar/calendar.component' ;
 import { noEventsContainerComponent} from './noEventsContainer/noEventsContainer.component' ;
 import { addEventsContainerComponent} from './addEventsContainer/addEventsContainer.component';
 import { EventsContainerComponent} from './EventsContainer/EventsContainer.component';
+import { editEventsContainerComponent} from './editEventsContainer/editEventsContainer.component';
 import { ActivityContainerComponent } from './ActivityContainer/ActivityContainer.component';
 import { CalendarCellComponent } from './calendar/calendarCell/calendarCell.component';
 
@@ -22,7 +23,7 @@ const appRoutes : Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
   { path: 'addEvent', component: addEventsContainerComponent},
-  { path: 'editEvent', component: EventsContainerComponent},
+  { path: 'editEvent', component: editEventsContainerComponent},
   { path: '', component: HomePageComponent},
   { path: '**', redirectTo :'/' }
 ];
@@ -41,7 +42,8 @@ const appRoutes : Routes = [
     addEventsContainerComponent,
     EventsContainerComponent,
     ActivityContainerComponent,
-    CalendarCellComponent
+    CalendarCellComponent,
+    editEventsContainerComponent
   ],
   imports: [
     BrowserModule,

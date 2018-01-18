@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
+import { addEventsContainerComponent} from '../addEventsContainer/addEventsContainer.component' ;
 import { noEventsContainerComponent} from '../noEventsContainer/noEventsContainer.component' ;
+import { editEventsContainerComponent} from '../editEventsContainer/editEventsContainer.component' ;
 import { EventsContainerComponent} from '../EventsContainer/EventsContainer.component' ;
 import { CalendarCellComponent } from './calendarCell/calendarCell.component';
-
+import {Router} from '@angular/router' ;
 @Component({
     selector: 'calendar',
     templateUrl: './calendar.component.html',
@@ -23,7 +24,7 @@ export class CalendarComponent {
     private activities = [];
     private showBool: boolean = false;
 
-    constructor(private http: HttpClient) {
+    constructor(private http: HttpClient, private router: Router) {
         
     }
 
@@ -43,7 +44,12 @@ export class CalendarComponent {
         }
         return daysArray;
     }
-
+    private add(){
+        this.router.navigateByUrl('/addEvent') ;
+    }
+    private edit(){
+        this.router.navigateByUrl('/editEvent') ;
+    }
     private getTableRows(days) {
         let counter = 1;
         let daysArray = [];

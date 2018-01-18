@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import { editEventsContainerComponent} from '../editEventsContainer/editEventsContainer.component';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,8 +12,11 @@ export class ActivityContainerComponent implements OnInit {
     @Input() private data;
     @Input() private events;
     
-    constructor() {
+    constructor(private router: Router) {
         
+    }
+    private edit(){
+        this.router.navigateByUrl('/editEvent') ;
     }
 
     ngOnInit() {

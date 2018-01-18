@@ -8,7 +8,10 @@ import { Router } from '@angular/router';
 })
 
 export class addEventsContainerComponent{
-    constructor() {
+    constructor(private router: Router) {
         
+    }
+    private add(){
+        this.router.navigateByUrl('/addEvent') ;
     }
 }
