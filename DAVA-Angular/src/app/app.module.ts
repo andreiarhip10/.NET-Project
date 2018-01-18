@@ -10,6 +10,10 @@ import { LoginComponent} from './login/login.component' ;
 import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { CalendarComponent} from './calendar/calendar.component' ;
+import { noEventsContainerComponent} from './noEventsContainer/noEventsContainer.component' ;
+import { addEventsContainerComponent} from './addEventsContainer/addEventsContainer.component';
+import { EventsContainerComponent} from './EventsContainer/EventsContainer.component';
+import { ActivityContainerComponent } from './ActivityContainer/ActivityContainer.component';
 import { HttpClientModule} from '@angular/common/http' ;
 
 
@@ -17,6 +21,8 @@ const appRoutes : Routes = [
   { path: 'addDashboard', component: DashboardComponent},
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
+  { path: 'addEvent', component: addEventsContainerComponent},
+  { path: 'editEvent', component: EventsContainerComponent},
   { path: '', component: HomePageComponent},
   {
     path: '**', redirectTo :'/'
@@ -34,7 +40,11 @@ const appRoutes : Routes = [
     LoginComponent,
     SignupComponent,
     NavbarComponent,
-    CalendarComponent
+    CalendarComponent,
+    noEventsContainerComponent,
+    addEventsContainerComponent,
+    EventsContainerComponent,
+    ActivityContainerComponent
   ],
   imports: [
     BrowserModule,
